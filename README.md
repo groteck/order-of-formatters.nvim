@@ -1,23 +1,13 @@
-# A Neovim Plugin Template
+# Order of formatters
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ellisonleao/nvim-plugin-template/lint-test.yml?branch=main&style=for-the-badge)
-![Lua](https://img.shields.io/badge/Made%20with%20Lua-blueviolet.svg?style=for-the-badge&logo=lua)
+*DISCLAIMER: This is a personal project and it's not meant to be used by anyone else. It's just a way for me to sort the order of formatting entities.*
+*DISCLAIMER: I don't know what I'm doing*
 
-A template repository for Neovim plugins.
+Simple plugin to register format tools and configure their order of execution.
 
 ## Using it
+TBD: not ready yet
 
-Via `gh`:
-
-```
-$ gh repo create my-plugin -p ellisonleao/nvim-plugin-template
-```
-
-Via github web page:
-
-Click on `Use this template`
-
-![](https://docs.github.com/assets/cb-36544/images/help/repository/use-this-template-button.png)
 
 ## Features and structure
 
