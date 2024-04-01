@@ -23,7 +23,7 @@ describe("register", function()
     plugin.reset()
   end)
 
-  it("register adds options to the format options", function()
+  it("adds options to the format options", function()
     assert(#plugin.get_format_options() == 0, "format options is empty")
     plugin.register({ filetype = "lua", order = 1, command = "lua-format" })
     assert(#plugin.get_format_options() == 1, "format options has one element")

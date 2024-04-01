@@ -2,11 +2,9 @@
 local module = require("order-of-formatters.module")
 
 ---@class Config
----@field opt table {default_formmatters: {{filetype: string, order: number, command: string}}}
+---@field default_formatters table {{filetype: string, order: number, command: string}}
 local config = {
-  opt = {
-    default_formmatters = {},
-  },
+  default_formatters = {},
 }
 
 ---@class OrderOfFormattersModule
@@ -21,7 +19,7 @@ M.config = config
 M.setup = function(args)
   M.config = vim.tbl_deep_extend("force", M.config, args or {})
 
-  for _, option in ipairs(M.config.opt.default_formmatters) do
+  for _, option in ipairs(M.config.default_formatters) do
     module.add_format_option(option)
   end
 end
