@@ -7,6 +7,10 @@ name: docs
 jobs:
   docs:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # We generate static HTML, JS, CSS so we need write access to the repo
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v3
       - name: panvimdoc
